@@ -1,0 +1,149 @@
+body {
+            background: linear-gradient(120deg, #ff5f6d 0%, #ffc371 20%, #47e891 40%, #43c6ac 60%, #6a82fb 80%, #fc5c7d 100%);
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2d1e2f;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 56px auto 48px auto;
+            background: rgba(255,255,255,0.97);
+            border-radius: 28px;
+            box-shadow: 0 10px 40px rgba(255, 95, 109, 0.13), 0 2px 16px rgba(106, 130, 251, 0.10);
+            padding: 56px 44px 44px 44px;
+            position: relative;
+            overflow: hidden;
+            border: 4px solid;
+            border-image: linear-gradient(90deg, #ff5f6d, #ffc371, #47e891, #43c6ac, #6a82fb, #fc5c7d) 1;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -70px;
+            right: -70px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #ffc371 60%, transparent 100%);
+            opacity: 0.22;
+            z-index: 0;
+        }
+        .container::after {
+            content: "";
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 160px;
+            height: 160px;
+            background: radial-gradient(circle, #6a82fb 60%, transparent 100%);
+            opacity: 0.18;
+            z-index: 0;
+        }
+        h1 {
+            /* Quita el gradiente y usa un color cálido visible */
+            color: #ff7e5f;
+            text-align: center;
+            margin-bottom: 28px;
+            font-size: 2.8em;
+            letter-spacing: 2.5px;
+            font-weight: 900;
+            text-shadow: 0 4px 24px #fff, 0 1px 0 #fff;
+            position: relative;
+            z-index: 1;
+        }
+        h2 {
+            background: linear-gradient(90deg, #fc5c7d, #6a82fb, #47e891, #ffc371);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 38px;
+            margin-bottom: 16px;
+            font-size: 1.6em;
+            font-weight: 800;
+            text-shadow: 0 2px 10px #fff;
+            position: relative;
+            z-index: 1;
+        }
+        p {
+            line-height: 1.85;
+            margin-bottom: 22px;
+            color: #3d2c3e;
+            font-size: 1.15em;
+            position: relative;
+            z-index: 1;
+        }
+        ul {
+            margin-left: 32px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            padding-left: 0;
+        }
+        ul li {
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            list-style: none;
+            position: relative;
+            padding-left: 32px;
+            color: #2d1e2f;
+        }
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff5f6d, #ffc371, #47e891, #43c6ac, #6a82fb, #fc5c7d);
+            box-shadow: 0 2px 8px rgba(255, 95, 109, 0.15);
+        }
+        ul li strong {
+            background: linear-gradient(90deg, #fc5c7d, #ffc371, #6a82fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        ul li:hover {
+            color: #fc5c7d;
+            letter-spacing: 1px;
+        }
+        .quote {
+            background: linear-gradient(90deg, #fff3e0 60%, #ffc371 100%);
+            border-left: 8px solid #fc5c7d;
+            padding: 22px 28px;
+            margin: 36px 0;
+            font-style: italic;
+            color: #b85d1c;
+            font-size: 1.22em;
+            border-radius: 14px;
+            box-shadow: 0 2px 18px rgba(255, 95, 109, 0.09);
+            position: relative;
+            z-index: 1;
+        }
+        .img-center {
+            display: block;
+            margin: 44px auto 32px auto;
+            max-width: 350px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(255, 95, 109, 0.18), 0 2px 12px rgba(106, 130, 251, 0.13);
+            border: 6px solid;
+            border-image: linear-gradient(135deg, #ff5f6d, #ffc371, #47e891, #43c6ac, #6a82fb, #fc5c7d) 1;
+            position: relative;
+            z-index: 1;
+            background: #fff;
+        }
+        @media (max-width: 900px) {
+    .container {
+        padding: 24px 4vw 24px 4vw;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .img-center {
+        max-width: 95vw;
+    }
+}
